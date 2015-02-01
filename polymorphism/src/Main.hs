@@ -1,6 +1,8 @@
 module Main where
 
-data Ele = forall a . (Show a) => Ele a
+data Ele where
+  Ele :: Show a => a -> Ele
+
 instance Show Ele where
   show (Ele x) = show x
 

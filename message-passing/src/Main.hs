@@ -1,7 +1,7 @@
 module Main where
 
 import Control.Distributed.Process (Process, liftIO, nodeAddress)
-import Control.Distributed.Process.Node (runProcess, initRemoteTable, localNodeId, newLocalNode)
+import Control.Distributed.Process.Node (initRemoteTable, localNodeId, newLocalNode, runProcess)
 import Network.Socket (withSocketsDo)
 import Network.Transport.TCP (createTransport, defaultTCPParameters)
 
